@@ -13,8 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    low_level_lib.cpp \
+    rfid.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    wiringPi.h \
+    low_level_lib.h \
+    wiringPiSPI.h \
+    rfid.h
 
 FORMS    += mainwindow.ui
